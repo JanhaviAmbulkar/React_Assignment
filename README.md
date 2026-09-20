@@ -1,32 +1,103 @@
-# React + TypeScript + Vite
+# React Assignment – Vite + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive React application created using Vite and TypeScript. This project demonstrates reusable components, page navigation, and a clean folder structure.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Home and About pages
+* Navigation using React Router DOM
+* Reusable Button component
+* Reusable Card component
+* Shared Header and Footer
+* TypeScript interfaces for component props
+* Responsive CSS styling
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* TypeScript
+* Vite
+* React Router DOM
+* CSS
 
-## Expanding the Oxlint configuration
+## Project Structure
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```text
+src/
+├── assets/
+├── components/
+│   ├── cards/
+│   │   └── Card.tsx
+│   ├── elements/
+│   │   └── Button.tsx
+│   └── layout/
+│       ├── Header.tsx
+│       └── Footer.tsx
+├── pages/
+│   ├── Home.tsx
+│   └── About.tsx
+├── styles/
+│   └── global.css
+├── types/
+│   └── index.ts
+├── utils/
+├── App.tsx
+└── main.tsx
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Getting Started
+
+### Prerequisites
+
+* Node.js
+* npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/JanhaviAmbulkar/React_Assignment.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd React_Assignment
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+### Run the Development Server
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in your terminal, usually `http://localhost:5173`.
+
+## Available Scripts
+
+| Command           | Description                       |
+| ----------------- | --------------------------------- |
+| `npm run dev`     | Starts the development server     |
+| `npx tsc -b`      | Checks TypeScript compilation     |
+| `npm run build`   | Builds the project for production |
+| `npm run preview` | Previews the production build     |
+
+## Pages
+
+* **Home:** `/`
+* **About:** `/about`
+
+## GitHub Repository
+
+https://github.com/JanhaviAmbulkar/React_Assignment
+
+## Author
+
+Janhavi Ambulkar

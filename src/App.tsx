@@ -1,25 +1,14 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Header from "./components/layouts/Header";
-import Footer from "./components/layouts/Footer";
-
-import Home from "./pages/Home";
-import About from "./pages/About";
-
-import "./styles/global.css";
+import Header from "./components/layouts/Header/Header";
+import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Header />
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-
-      <Footer />
-    </BrowserRouter>
+      <main>
+        <Hero />
+      </main>
+    </>
   );
 }
 

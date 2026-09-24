@@ -1,125 +1,17 @@
+@import "tailwindcss";
+
 * {
   box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
   margin: 0;
-  padding: 0;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f7fb;
-  color: #1f2937;
-  line-height: 1.6;
-}
-
-#root {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 8%;
-  background: #1e3a8a;
-  color: white;
-}
-
-.logo {
-  font-size: 24px;
-}
-
-.navbar {
-  display: flex;
-  gap: 24px;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  text-decoration: underline;
-}
-
-.home-page,
-.about-page {
-  flex: 1;
-  padding: 60px 8%;
-  text-align: center;
-}
-
-.home-page h1,
-.about-page h1 {
-  margin-bottom: 16px;
-  color: #1e3a8a;
-}
-
-.card-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 32px;
-}
-
-.card {
-  width: 100%;
-  max-width: 420px;
-  padding: 28px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  text-align: left;
-}
-
-.card h2 {
-  margin-bottom: 12px;
-}
-
-.card p {
-  margin-bottom: 20px;
-  color: #4b5563;
-}
-
-.button {
-  border: none;
-  border-radius: 6px;
-  padding: 10px 18px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.button-primary {
-  background: #2563eb;
-  color: white;
-}
-
-.button-secondary {
-  background: #e5e7eb;
-  color: #1f2937;
-}
-
-.button:hover {
-  opacity: 0.9;
-}
-
-.footer {
-  padding: 20px;
-  background: #1e3a8a;
-  color: white;
-  text-align: center;
-}
-
-@media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .home-page,
-  .about-page {
-    padding: 40px 5%;
-  }
+  min-width: 320px;
 }
